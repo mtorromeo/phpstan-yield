@@ -1,5 +1,10 @@
 # phpstan-yield
 
+[![Latest Version](https://img.shields.io/packagist/v/mtorromeo/phpstan-yield)](https://packagist.org/packages/mtorromeo/phpstan-yield)
+[![Open Issues](https://img.shields.io/github/issues/mtorromeo/phpstan-yield)](https://github.com/mtorromeo/phpstan-yield/issues)
+[![Coverage](https://img.shields.io/codecov/c/github/mtorromeo/phpstan-yield)](https://codecov.io/gh/mtorromeo/phpstan-yield)
+[![CI](https://img.shields.io/github/actions/workflow/status/mtorromeo/phpstan-yield/ci.yml?label=CI)](https://github.com/mtorromeo/phpstan-yield/actions/workflows/ci.yml)
+
 A [PHPStan](https://phpstan.org/) extension that enables type inference for `yield` expressions using `@yield` annotations on classes.
 
 ## Purpose
