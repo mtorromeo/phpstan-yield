@@ -1,0 +1,4 @@
+services:
+  - class: PHPStanYield\YieldExpressionTypeExtension
+    tags:
+      - phpstan.broker.expressionTypeResolverExtension

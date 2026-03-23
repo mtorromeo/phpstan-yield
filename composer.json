@@ -1,0 +1,43 @@
+{
+  "name": "mtorromeo/phpstan-yield",
+  "description": "PHPStan extension to support @yield",
+  "type": "library",
+  "require": {
+    "phpstan/phpstan": "^2.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^13.0",
+    "phpstan/phpstan-phpunit": "^2.0",
+    "phpstan/phpstan-deprecation-rules": "^2.0",
+    "carthage-software/mago": "^1.15"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "PHPStanYield\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "classmap": [
+      "tests"
+    ]
+  },
+  "authors": [
+    {
+      "name": "Massimiliano Torromeo",
+      "email": "massimiliano.torromeo@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "php -d zend.assertions=on vendor/bin/phpunit",
+    "phpstan": "phpstan analyze --no-progress --ansi --memory-limit=256M -v",
+    "format": "mago format"
+  },
+  "extra": {
+    "phpstan": {
+      "includes": [
+        "extension.neon"
+      ]
+    }
+  }
+}

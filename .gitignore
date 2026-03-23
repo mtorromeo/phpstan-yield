@@ -1,0 +1,4 @@
+/clover-report.xml
+vendor/
+.*
+!.git*
